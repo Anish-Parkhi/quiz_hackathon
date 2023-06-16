@@ -12,8 +12,10 @@
 }
 .main_div{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
+    /* gap: 2rem; */
+    font-size: 21px;
+    margin: auto;
 }
 
 .searchBar{
@@ -47,4 +49,27 @@
 
 .profile_div_userName{
     font-size: 18px;
+}
+
+
+/* MUI images styling */
+
+.coins_image{
+    width: 20px;
+    height: 20px;
+}
+
+.images{
+    font-size: 40px;
+}
+
+.top{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+hr{
+    margin: auto 0px;
+    height: 2.8rem;
 }

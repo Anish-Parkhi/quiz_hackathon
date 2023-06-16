@@ -6,7 +6,9 @@ function Card(props) {
   return (
     <>
         <div className={styles.main_div}>
-            <div className={styles.card_div}>
+            <div className={styles.card_div}
+            style={{backgroundImage:`${props.image}`}}
+            >
                 <div className={styles.card_div_heading}>
                     <p>
                         {
@@ -34,6 +36,7 @@ function Card(props) {
                                     key={index}
                                     className={styles.tags}
                                     >
+                                        <img src={``} />
                                         {
                                             item
                                         }
@@ -55,6 +58,7 @@ Card.propTypes = {
     question: PropTypes.number,
     time: PropTypes.number,
     tags: PropTypes.array,
+    image: PropTypes.string
 }
 
 export default Card

@@ -2,6 +2,8 @@
 import React from 'react'
 import Topnav from './Topnav'
 import Card from './Card'
+import img from './background.png'
+
 
 function Home() {
   return (
@@ -14,6 +16,7 @@ function Home() {
         question={15}
         time={30}
         tags = {['Stars','Space','Earth','Paid']}
+        image = {img}
         />
     </>
   )

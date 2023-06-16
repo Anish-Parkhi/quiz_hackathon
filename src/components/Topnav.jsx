@@ -18,9 +18,11 @@ function Topnav(props) {
 
   return (
     <>
+    <div className={styles.top}>
         <div className={styles.main_div}>
         <div className={styles.searchBar}>
             <TextField
+                style={{margin:"auto", marginTop:"6px"}}
                 className={styles.text_field}
                 label="Search"
                 variant='outlined'
@@ -36,11 +38,15 @@ function Topnav(props) {
                 }}
             />
         </div>
-
+        <hr/>
         <div className={styles.points_div}>
             <div className={styles.points_div_img}>
-                <IconButton>
-                    <CurrencyYenIcon/>
+                <IconButton
+                className={styles.images}>
+                    <CurrencyYenIcon
+                    style={{fontSize:"45px"}}
+                    className={styles.coins_image}
+                    />
                 </IconButton>
             </div>
             <div className={styles.points_div_content}>
@@ -51,13 +57,15 @@ function Topnav(props) {
                 </p>
             </div>
         </div>
-
+        <hr/>
         <div className={styles.notification_div}>
             <IconButton>
-                <NotificationsIcon/>
+                <NotificationsIcon
+                style={{fontSize:"45px"}}
+                />
             </IconButton>
         </div>
-
+        <hr/>
         <div className={styles.profile_div}>
             <div className={styles.profile_div_userName}>
                 <p>
@@ -68,9 +76,12 @@ function Topnav(props) {
             </div>
             <div className={styles.profile_div_icon}>
                 <IconButton>
-                    <PersonOutlineOutlinedIcon/>
+                    <PersonOutlineOutlinedIcon
+                    style={{fontSize:"45px"}}
+                    />
                 </IconButton>
             </div>
+        </div>
         </div>
         </div>
     </>
