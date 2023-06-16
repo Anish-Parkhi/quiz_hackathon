@@ -2,7 +2,7 @@
 import React from 'react'
 import Topnav from './Topnav'
 import Card from './Card'
-import img from './background.png'
+import img from '../assets/background.png'
 
 
 function Home() {

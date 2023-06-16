@@ -1,13 +1,15 @@
 // import React from 'react'
 import styles from './Card.module.css'
 import PropTypes from 'prop-types';
+import IconButton from '@mui/material/IconButton';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 function Card(props) {
   return (
     <>
         <div className={styles.main_div}>
             <div className={styles.card_div}
-            style={{backgroundImage:`${props.image}`}}
+            style={{backgroundImage:`url(${props.image})`}}
             >
                 <div className={styles.card_div_heading}>
                     <p>
@@ -18,12 +20,12 @@ function Card(props) {
                 </div>
                 <div className={styles.card_div_time}>
                     <div className={styles.question}>
-                        {props.question}
-                        <p>Questions</p>
+                        <span className={styles.quesions_title}>{props.question}</span>
+                        <p className={styles.questions_div_subtitle}>Questions</p>
                     </div>
                     <div className={styles.time}>
-                        {props.time}
-                        <p>Minutes</p>
+                        <span className={styles.quesions_title}>{props.time}</span>
+                        <p className={styles.questions_div_subtitle}>Minutes</p>
                     </div>
                 </div>
                 
@@ -45,6 +47,15 @@ function Card(props) {
                             )
                         })
                     }
+                </div>
+
+                <div className={styles.play_button_div}>
+                    <IconButton>
+                        <PlayCircleIcon
+                        className={styles.play_icon}
+                        style={{color:"#2E4B90",fontSize:"80px"}}
+                        />
+                    </IconButton>
                 </div>
 
             </div>

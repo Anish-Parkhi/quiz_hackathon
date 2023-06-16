@@ -14,10 +14,11 @@
     display: flex;
     flex-direction: column;
     width: 60%;
-    border: 2px solid red;
     margin: auto;
     padding: 1.5rem;
     border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card_div_time{
@@ -28,6 +29,8 @@
     justify-content: flex-start;
     gap: 0.8rem;
     letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
     font-weight: 700;
 }
 
@@ -58,4 +61,23 @@
     background-color: #2E4B90;
     color: #FFFFFF;
     font-weight: 700;
+}
+
+.quesions_title{
+    font-size: 2.3rem;
+    margin-bottom: 0px;
+}
+
+.questions_div_subtitle{
+    margin-top: 0.5rem;
+}
+
+.play_button_div{
+    text-align: right;
+}
+
+.play_icon{
+    position: relative;
+    top: 4rem;
+    right: 4rem;
 }
